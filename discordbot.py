@@ -20,6 +20,7 @@ async def on_message(message):
     # 送信者為Bot時無視
     if message.author.bot:
         return
+    
     #新增/修改指令
     if client.user in message.mentions: # @判定
         translator = googletrans.Translator()
